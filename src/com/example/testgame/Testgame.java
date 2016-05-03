@@ -144,12 +144,12 @@ public class Testgame extends SimpleBaseGameActivity {
 	@Override
 	public void onCreateResources() {
 		BitmapTextureAtlasTextureRegionFactory.setAssetBasePath("gfx/");
-
+		// Change player 
 		this.mBitmapTextureAtlas = new BitmapTextureAtlas(
 				this.getTextureManager(), 96, 192, TextureOptions.DEFAULT);
 		this.mPlayerTextureRegion = BitmapTextureAtlasTextureRegionFactory
 				.createTiledFromAsset(this.mBitmapTextureAtlas, this,
-						"maidchar01.png", 0, 0, 3, 4);
+						"player1.png", 0, 0, 3, 4);
 		this.mBitmapTextureAtlas.load();
 
 		this.aButtonTextureAtlas = new BitmapTextureAtlas(
